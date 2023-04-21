@@ -75,18 +75,21 @@ document.addEventListener("DOMContentLoaded", () => {
   let timerDOM = document.getElementById("timer")
 
   let sec = 0;
+  
   function handleTimer() {
     sec++;
     timerDOM.innerHTML = sec;
   }
 
-  timer = setInterval(handleTimer, 1000);
+  function startTimer() {
+    if (!timerStarted) {
+      timerStarted = true;
+      timer = setInterval(handleTimer, 1000);
+    }
+  }
 
   function flipCard() {
-    if (timerStarted === false) {
-      timerStarted = true;
-      handleTimer()
-    }
+    startTimer()
 
     let cardId = this.getAttribute("data-id");
     cardsChosen.push(cardArray[cardId].name);
