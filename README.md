@@ -1,5 +1,8 @@
 # memory-game
+
 This is a classic memory game made in JavaScipt, HTML, and CSS
+<br><br><br>
+`![alt text](https://github.com/TravisLeeRichardson/memory-game/blob/main/memory%20game.png)
 
 *Step1:* Download the files to your local machine.<br>
 *Step2:* Open Index.html on your brower.<br>
